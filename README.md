@@ -7,8 +7,7 @@
   * Can create mutually cooperating sub-builders
   * Builder often have fluent interface
 
-
-### 2. Factories
+### 2. Factory
   * Factory method more expressive than initializer
   * Factory can be an outside class or inner class
 
@@ -20,6 +19,13 @@
   * When you need to ensure just a single instance exists
   * Easy to make with a decorator or metaclass
   * Consider using dependency injection
+
+### 5. Object Pool
+  * Allow creation of set of object and usage from those pull
+
+### 6. Multiton
+  * Similar to Singleton but allows multiple `single instances` identified by a key.
+
 
 
 ## Structural Patterns
