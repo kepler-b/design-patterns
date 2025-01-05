@@ -1,0 +1,13 @@
+#!./.venv/bin/python
+import sys
+import importlib
+def main():
+    argument = sys.argv[1]
+    if argument:
+        module = importlib.import_module(f"src.{argument}")
+        module.execute()
+    else:
+        raise ValueError("Pass module name from src block to run.")
+
+if __name__=="__main__":
+    main()
